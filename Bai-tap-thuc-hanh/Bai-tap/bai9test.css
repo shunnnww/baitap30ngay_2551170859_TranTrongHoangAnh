@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #f0f2f5;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 40px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.the-ho-so{
+    max-width: 820px;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    overflow: hidden;
+    display: flex;
+}
+.cot-trai{
+    width: 280px;
+    background: linear-gradient(135deg, #1565C0, #0d3f7a);
+    color: #ffffff;
+    padding: 40px 25px;
+    text-align: center;
+    flex-shrink: 0;
+}
+.anh-dai-dien{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    color: #1565C0;
+    font-size: 32px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+.ho-ten{
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+}
+.chuc-danh{
+    font-size: 16px;
+    margin: 0 0 20px 0;
+    font-weight: 500;
+}
+.thong-tin-lien-he{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    font-size: 14px;
+}
+.bieu-tuong{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.cot-phai{
+    flex: 1;
+    padding: 40px 30px;
+}
+.muc-ho-so{
+    margin-bottom: 30px;
+}
+.tieu-de-muc{
+    color: #1565C0;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 8px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+.noi-dung{
+    font-size: 14px;
+    line-height: 1.6;
+    color: #333333;
+    margin: 0;
+}
+.danh-sach-ky-nang{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+.chip-ky-nang{
+    background-color: #1565C0;
+    color: #ffffff;
+    padding: 6px 12px;
+    border-radius: 12px;
+    font-size: 13px;
+    font-weight: 500;
+    display: inline-block;
+}
+.lien-ket{
+    font-size: 14px;
+    margin: 0 0 30px 0;
+}
+.lien-ket a{
+    color: #1565C0;
+    text-decoration: none;
+}

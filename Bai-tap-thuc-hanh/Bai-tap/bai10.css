@@ -1,0 +1,150 @@
+/* =============================================
+   BÀI 10 — CSS: Trang liên hệ (biểu mẫu HTML)
+   ============================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f5f9;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 40px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* THẺ FORM */
+.the-form {
+    max-width: 680px;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+/* TIÊU ĐỀ FORM */
+.dau-form {
+    background-color: #0f766e;
+    color: #ffffff;
+    padding: 24px 30px;
+}
+
+.tieu-de-form {
+    font-size: 22px;
+    margin: 0 0 6px 0;
+    font-weight: bold;
+}
+
+.mo-ta-form {
+    font-size: 13.5px;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* THÂN FORM */
+.than-form {
+    padding: 30px 30px;
+}
+
+/* 2 CỘT CHO Ô NHẬP NGẮN */
+.hang-hai-cot {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 16px;
+}
+
+.hang-hai-cot .nhom-o-nhap {
+    flex: 1;
+    margin-bottom: 0;
+}
+
+.nhom-o-nhap {
+    margin-bottom: 16px;
+}
+
+.nhom-o-nhap label {
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    color: #334155;
+    margin-bottom: 6px;
+}
+
+.nhom-o-nhap input,
+.nhom-o-nhap select,
+.nhom-o-nhap textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #1e293b;
+    outline: none;
+    font-family: inherit;
+    transition: border-color 0.2s;
+}
+
+.nhom-o-nhap input:focus,
+.nhom-o-nhap select:focus,
+.nhom-o-nhap textarea:focus {
+    border-color: #0f766e;
+}
+
+/* CHECKBOX */
+.nhom-checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.nhom-checkbox label {
+    font-size: 13.5px;
+    color: #334155;
+    cursor: pointer;
+}
+
+/* NÚT BẤM */
+.nhom-nut-bam {
+    display: flex;
+    gap: 12px;
+}
+
+.nut-gui {
+    background-color: #0f766e;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.nut-gui:hover {
+    background-color: #0d5f58;
+}
+
+.nut-nhap-lai {
+    background-color: #e2e8f0;
+    color: #334155;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.nut-nhap-lai:hover {
+    background-color: #cbd5e1;
+}

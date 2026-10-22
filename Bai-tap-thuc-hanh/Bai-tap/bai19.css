@@ -1,0 +1,86 @@
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: Arial, "Helvetica Neue", sans-serif;
+    color: #262626;
+    line-height: 1.6;
+    padding: 40px 20px;
+}
+
+.khung-chinh {
+    max-width: 860px;
+    margin: 0 auto;
+    display: flex;
+    gap: 25px;
+    align-items: flex-start;
+}
+
+/* ẢNH ĐỒI CÁT CỘT TRÁI (~300px) CÓ BÓNG ĐỔ */
+.cot-trai {
+    flex: 0 0 280px;
+}
+
+.anh-doi-cat {
+    width: 100%;
+    height: auto;
+    display: block;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
+/* CỘT PHẢI */
+.cot-phai {
+    flex: 1;
+}
+
+/* TIÊU ĐỀ CHỮ #C9A227 ĐỔ BÓNG CHỮ */
+.tieu-de-mui-ne {
+    color: #C9A227;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+    margin-bottom: 16px;
+}
+
+/* KHỐI NỘI DUNG VIỀN NÉT ĐỨT #E07B00 BO GÓC */
+.khoi-noi-dung {
+    border: 2px dashed #E07B00;
+    border-radius: 8px;
+    padding: 18px 20px;
+    background-color: #ffffff;
+}
+
+.khoi-noi-dung p {
+    font-size: 13.5px;
+    color: #333333;
+    text-align: justify;
+    margin-bottom: 14px;
+}
+
+.khoi-noi-dung p:last-child {
+    margin-bottom: 0;
+}
+
+/* TỪ NHẤN MẠNH CHỮ #C62828 IN ĐẬM */
+.to-do {
+    color: #C62828;
+    font-weight: bold;
+}
+
+@media (max-width: 700px) {
+    .khung-chinh {
+        flex-direction: column;
+    }
+    .cot-trai {
+        flex: auto;
+        width: 100%;
+    }
+}

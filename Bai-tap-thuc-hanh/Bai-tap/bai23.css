@@ -1,0 +1,96 @@
+/* =============================================
+   BÀI 23 — CSS: Thư viện ảnh hiệu ứng Hover (Hình minh hoạ chuẩn)
+   ============================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f8fafc;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #1e293b;
+    padding: 40px 15px;
+}
+
+.khung-chinh {
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+/* TIÊU ĐỀ TRANG */
+.phan-tieu-de {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.tieu-de-chinh {
+    font-size: 21px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: #0f172a;
+}
+
+.mo-ta-phu {
+    font-size: 13px;
+    color: #64748b;
+}
+
+/* LƯỚI 6 ẢNH: GRID 3 CỘT, GAP 16PX */
+.luoi-anh {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+/* Ô ẢNH BO GÓC, ĐỔ BÓNG, OVERFLOW HIDDEN */
+.o-anh {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    height: 180px;
+    background-color: #1e293b;
+    cursor: pointer;
+}
+
+.anh-danh-thang {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+/* KHI RÊ CHUỘT: PHÓNG TO TRANSFORM: SCALE(1.12) */
+.o-anh:hover .anh-danh-thang {
+    transform: scale(1.12);
+}
+
+/* LỚP PHỦ TÊN: GRADIENT ĐEN MỜ Ở ĐÁY ẢNH */
+.lop-phu-ten {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 25px 14px 12px 14px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, transparent 100%);
+    color: #ffffff;
+    font-size: 13.5px;
+    font-weight: 600;
+    pointer-events: none;
+}
+
+@media (max-width: 768px) {
+    .luoi-anh {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .luoi-anh {
+        grid-template-columns: 1fr;
+    }
+}

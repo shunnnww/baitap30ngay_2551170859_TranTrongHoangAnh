@@ -1,0 +1,168 @@
+/* =============================================
+   BÀI 21 — CSS: Bố cục trang 4 vùng (Hình minh hoạ chuẩn)
+   ============================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f0f2f5;
+    font-family: Arial, sans-serif;
+    padding: 20px 10px;
+}
+
+.trang-chinh {
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* 1. BANNER TRÊN CÙNG: NỀN #C62828, CHỮ TRẮNG */
+.banner-tren {
+    background-color: #C62828;
+    color: #ffffff;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    height: 38px;
+    width: auto;
+}
+
+.chu-banner {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+/* KHUNG 3 CỘT */
+.than-3-cot {
+    display: flex;
+    min-height: 460px;
+}
+
+/* 2. MENU DỌC BÊN TRÁI: NỀN #C62828 -> #8E0000, RỘNG 200px */
+.menu-trai {
+    width: 200px;
+    flex-shrink: 0;
+    background-color: #a71818;
+    background: linear-gradient(180deg, #C62828 0%, #8E0000 100%);
+    padding: 15px 0;
+}
+
+.muc-menu {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+    padding: 10px 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.muc-menu:hover, .muc-menu.active {
+    background-color: rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+}
+
+/* 3. NỘI DUNG CHÍNH Ở GIỮA */
+.noi-dung-giua {
+    flex: 1;
+    padding: 20px 25px;
+    background-color: #ffffff;
+}
+
+.tieu-de-noi-dung {
+    color: #c62828;
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* HỘP MENU CON NỀN #FFE082 BO GÓC */
+.hop-vang {
+    background-color: #FFE082;
+    border-radius: 6px;
+    padding: 8px 16px;
+    display: flex;
+    gap: 15px;
+    font-size: 12.5px;
+    color: #333333;
+    font-weight: 500;
+    margin-bottom: 22px;
+}
+
+/* KHUNG NỘI DUNG NỀN #FFFFFF VIỀN #e0e0e0 */
+.khung-trang-noi-dung {
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 20px;
+    background-color: #ffffff;
+    min-height: 180px;
+}
+
+.dong-mo-dau {
+    font-size: 13.5px;
+    color: #4b5563;
+    margin-bottom: 20px;
+}
+
+.noi-dung-trung-tam {
+    text-align: center;
+    line-height: 1.8;
+}
+
+.ten-tt {
+    font-size: 14px;
+    font-weight: bold;
+    color: #1f2937;
+}
+
+.chao-mung {
+    font-size: 13.5px;
+    color: #374151;
+}
+
+/* 4. CỘT QUẢNG CÁO BÊN PHẢI (160px) */
+.cot-quang-cao {
+    width: 160px;
+    flex-shrink: 0;
+    padding: 15px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background-color: #ffffff;
+}
+
+.item-qc {
+    display: block;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.anh-qc {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* RESPONSIVE: HẸP THÌ GẬP VỀ 1 CỘT */
+@media (max-width: 768px) {
+    .than-3-cot {
+        flex-direction: column;
+    }
+    .menu-trai, .cot-quang-cao {
+        width: 100%;
+    }
+    .cot-quang-cao {
+        flex-direction: row;
+        justify-content: center;
+    }
+}

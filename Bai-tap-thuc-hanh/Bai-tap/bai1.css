@@ -1,0 +1,26 @@
+.khung-bai-tho{
+    width: 450px;
+    border: 1 solid #9E9E9E ;
+    background-color:#FFFDE7;
+    font-style: italic;
+    text-align: center;
+}
+.tieu-de{
+    background-color: #FFD9E6;
+    color: #D40000;
+    font-style: normal;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+.mau-xanh{
+    color: #0033CC;
+    line-height: auto;
+}
+.mau-do{
+    color: #D40000;
+    line-height: auto;
+}
+.hr{
+    width: 55%;
+    border: 1px solid #0033CC ;
+}

@@ -1,0 +1,69 @@
+/* =============================================
+   BÀI 3 — CSS: Trang giới thiệu Vịnh Hạ Long
+   ============================================= */
+
+body {
+    background: linear-gradient(to bottom, #7ec8e3, #0a5c8a);
+    font-family: 'Times New Roman', Times, serif;
+    min-height: 100vh;
+    margin: 0;
+    padding: 40px 15px;
+    box-sizing: border-box;
+}
+
+.khung-bai-viet {
+    margin: 0 auto;
+    max-width: 780px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+
+.tieu-de {
+    color: #0b3d5c;
+    text-align: center;
+    font-weight: bold;
+    font-size: 26px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.khoi-mo-dau {
+    background-color: #0b3d5c;
+    color: #ffffff;
+    font-style: italic;
+    line-height: 1.6;
+    padding: 16px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.anh-minh-hoa {
+    width: 290px;
+    float: right;
+    border-radius: 8px;
+    margin-left: 20px;
+    margin-bottom: 12px;
+}
+
+.doan-van {
+    text-align: justify;
+    font-size: 16px;
+    color: #222222;
+    line-height: 1.7;
+    margin-bottom: 16px;
+    margin-top: 0;
+}
+
+.doan-van::first-letter {
+    font-size: 48px;
+    font-weight: bold;
+    color: #0b3d5c;
+    float: left;
+    line-height: 1;
+    margin-right: 6px;
+    margin-top: 2px;
+}

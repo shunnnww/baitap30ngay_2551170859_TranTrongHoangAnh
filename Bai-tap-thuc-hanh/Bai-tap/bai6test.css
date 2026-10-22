@@ -1,0 +1,62 @@
+body{
+    background-color: #f5f5f5;
+    font-family: times new roman, sans-serif;
+    margin: 0;
+    padding: 40px 15px;
+}
+.khung-bai-viet{
+    max-width:780px
+    margin: 0 auto;
+    background-color: #FDF8EF;
+    padding: 30px;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06); 
+}
+.tieu-de{
+    color: #E65100;
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+.khung-hai-cot{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.cot-anh{
+    flex-shrink: 0;
+    width: 200px;
+    text-align: center;
+}
+.anh-minh-hoa{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.cot-bang{
+    flex: 1;
+    border: 1px;
+}
+.bang-mon-an{
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+}
+.bang-mon-an thead th{
+    background-color: #E65100;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 15px;
+}
+.o-stt{
+    text-align: center;
+    font-weight: bold;
+}
+.bang-mon-an tbody tr:nth-child(even){
+    background-color: #f9f9f9;
+}
+.bang-mon-an tbody tr:nth-child(even){
+    background-color: #FDF8EF;
+}

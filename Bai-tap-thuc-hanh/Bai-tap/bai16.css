@@ -1,0 +1,156 @@
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #eef2f6;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 15px;
+}
+
+/* THẺ ỨNG DỤNG NỀN TRẮNG, BO GÓC 20px, RỘNG 600px */
+.the-ung-dung {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+/* TIÊU ĐỀ NỀN TÍM #6d28d9, CHỮ TRẮNG KÈM MÔ TẢ */
+.dau-the {
+    background-color: #6d28d9;
+    color: #ffffff;
+    padding: 24px 28px;
+}
+
+.tieu-de-chinh {
+    font-size: 21px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.mo-ta-phu {
+    font-size: 13px;
+    opacity: 0.9;
+    font-weight: 400;
+}
+
+/* Ô NHẬP + NÚT THÊM */
+.khung-nhap-lieu {
+    display: flex;
+    padding: 24px 28px 16px 28px;
+    gap: 12px;
+}
+
+.khung-nhap-lieu input {
+    flex: 1;
+    padding: 11px 16px;
+    font-size: 14.5px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    outline: none;
+    color: #1f2937;
+    transition: border-color 0.2s;
+}
+
+.khung-nhap-lieu input:focus {
+    border-color: #6d28d9;
+}
+
+.btn-them {
+    background-color: #6d28d9;
+    color: #ffffff;
+    border: none;
+    padding: 11px 22px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-them:hover {
+    background-color: #5b21b6;
+}
+
+/* DANH SÁCH VIỆC: KẺ NÉT ĐỨT #ede9fe */
+.danh-sach {
+    list-style: none;
+    padding: 6px 28px;
+}
+
+.muc-viec {
+    display: flex;
+    align-items: center;
+    padding: 14px 0;
+    border-bottom: 1.5px dotted #ede9fe;
+}
+
+.muc-viec:last-child {
+    border-bottom: 1.5px dotted #ede9fe;
+}
+
+/* Ô ĐÁNH DẤU: VUÔNG BO GÓC, VIỀN #a78bfa, KHI XONG #6d28d9 */
+.o-danh-dau {
+    width: 22px;
+    height: 22px;
+    border: 1.5px solid #a78bfa;
+    border-radius: 6px;
+    margin-right: 14px;
+    cursor: pointer;
+    display: inline-block;
+    flex-shrink: 0;
+    transition: all 0.2s;
+}
+
+.muc-viec.hoan-thanh .o-danh-dau {
+    background-color: #6d28d9;
+    border-color: #6d28d9;
+}
+
+.noi-dung-viec {
+    flex: 1;
+    font-size: 14.5px;
+    color: #1f2937;
+    cursor: pointer;
+    user-select: none;
+}
+
+.muc-viec.hoan-thanh .noi-dung-viec {
+    text-decoration: line-through;
+    color: #94a3b8;
+}
+
+/* NÚT XOÁ: NỀN #fde2e2, CHỮ #b91c1c */
+.btn-xoa {
+    background-color: #fee2e2;
+    color: #dc2626;
+    border: none;
+    padding: 5px 14px;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-xoa:hover {
+    background-color: #fecaca;
+}
+
+/* THÔNG TIN SỐ VIỆC CÒN LẠI */
+.chan-the {
+    padding: 20px 28px 24px 28px;
+    font-size: 13.5px;
+    color: #64748b;
+}

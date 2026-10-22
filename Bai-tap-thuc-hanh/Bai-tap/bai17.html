@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 17 - Kiểm tra biểu mẫu bằng JavaScript</title>
+    <link rel="stylesheet" href="bai17.css">
+</head>
+<body>
+
+    <div class="khung-chinh">
+        <form id="form-dang-ky" class="form-dang-ky" novalidate>
+            <h2 class="tieu-de-form">Đăng ký tài khoản</h2>
+            <p class="mo-ta-form">Dữ liệu được kiểm tra bằng JavaScript trước khi gửi.</p>
+
+            <!-- 1. HỌ VÀ TÊN -->
+            <div class="nhom-o-nhap" id="nhom-ho-ten">
+                <label for="ho-ten">Họ và tên</label>
+                <input type="text" id="ho-ten" value="Nguyễn Văn An" class="hop-le">
+                <span class="thong-bao text-xanh">✓ Hợp lệ</span>
+            </div>
+
+            <!-- 2. EMAIL -->
+            <div class="nhom-o-nhap" id="nhom-email">
+                <label for="email">Email</label>
+                <input type="text" id="email" value="an.nv@" class="co-loi">
+                <span class="thong-bao text-do">✗ Email không hợp lệ (thiếu tên miền)</span>
+            </div>
+
+            <!-- 3. MẬT KHẨU -->
+            <div class="nhom-o-nhap" id="nhom-mat-khau">
+                <label for="mat-khau">Mật khẩu</label>
+                <input type="password" id="mat-khau" value="123" class="co-loi">
+                <span class="thong-bao text-do">✗ Mật khẩu phải có ít nhất 6 ký tự</span>
+            </div>
+
+            <!-- 4. XÁC NHẬN MẬT KHẨU -->
+            <div class="nhom-o-nhap" id="nhom-xac-nhan">
+                <label for="xac-nhan">Xác nhận mật khẩu</label>
+                <input type="password" id="xac-nhan" value="123456" class="hop-le">
+                <span class="thong-bao text-xanh">✓ Hợp lệ</span>
+            </div>
+
+            <!-- NÚT ĐĂNG KÝ -->
+            <button type="submit" class="btn-dang-ky" id="btn-dang-ky">Đăng ký</button>
+        </form>
+    </div>
+
+    <script src="bai17.js"></script>
+</body>
+</html>

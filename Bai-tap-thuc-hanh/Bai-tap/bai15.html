@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 15 - Máy tính đơn giản (Calculator)</title>
+    <link rel="stylesheet" href="bai15.css">
+</head>
+<body>
+
+    <!-- KHUNG CHÍNH CỦA MÁY TÍNH -->
+    <div class="may-tinh">
+        <!-- NHÃN HIỆU MÁY TÍNH -->
+        <div class="nhan-hieu">MÁY TÍNH ĐIỆN TỬ</div>
+
+        <!-- MÀN HÌNH HIỂN THỊ -->
+        <div class="man-hinh">
+            <!-- Dòng 1: Biểu thức nhập vào (chữ nhỏ phía trên) -->
+            <div id="phep-tinh" class="phep-tinh"></div>
+            <!-- Dòng 2: Kết quả tính toán (chữ lớn phía dưới) -->
+            <div id="ket-qua" class="ket-qua">0</div>
+        </div>
+
+        <!-- BÀN PHÍM LƯỚI 4 CỘT × 5 HÀNG -->
+        <div class="ban-phim">
+            <!-- HÀNG 1: C, ( ), %, ÷ -->
+            <button type="button" class="nut nut-xoa" onclick="xoaTatCa()">C</button>
+            <button type="button" class="nut nut-phu" onclick="nhapNgoac()">( )</button>
+            <button type="button" class="nut nut-phu" onclick="nhapKyTu('%')">%</button>
+            <button type="button" class="nut nut-toan-tu" onclick="nhapKyTu('÷')">÷</button>
+
+            <!-- HÀNG 2: 7, 8, 9, × -->
+            <button type="button" class="nut nut-so" onclick="nhapKyTu('7')">7</button>
+            <button type="button" class="nut nut-so" onclick="nhapKyTu('8')">8</button>
+            <button type="button" class="nut nut-so" onclick="nhapKyTu('9')">9</button>
+            <button type="button" class="nut nut-toan-tu" onclick="nhapKyTu('×')">×</button>
+
+            <!-- HÀNG 3: 4, 5, 6, − -->
+            <button type="button" class="nut nut-so" onclick="nhapKyTu('4')">4</button>
+            <button type="button" class="nut nut-so" onclick="nhapKyTu('5')">5</button>
+            <button type="button" class="nut nut-so" onclick="nhapKyTu('6')">6</button>
+            <button type="button" class="nut nut-toan-tu" onclick="nhapKyTu('−')">−</button>
+
+            <!-- HÀNG 4: 1, 2, 3, + -->
+            <button type="button" class="nut nut-so" onclick="nhapKyTu('1')">1</button>
+            <button type="button" class="nut nut-so" onclick="nhapKyTu('2')">2</button>
+            <button type="button" class="nut nut-so" onclick="nhapKyTu('3')">3</button>
+            <button type="button" class="nut nut-toan-tu" onclick="nhapKyTu('+')">+</button>
+
+            <!-- HÀNG 5: 0 (chiếm 2 cột), ., = -->
+            <button type="button" class="nut nut-so nut-khong" onclick="nhapKyTu('0')">0</button>
+            <button type="button" class="nut nut-so" onclick="nhapKyTu('.')">.</button>
+            <button type="button" class="nut nut-bang" onclick="tinhKetQua()">=</button>
+        </div>
+    </div>
+
+    <!-- TẬP TIN XỬ LÝ JAVASCRIPT -->
+    <script src="bai15.js"></script>
+</body>
+</html>

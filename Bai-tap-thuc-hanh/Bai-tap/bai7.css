@@ -1,0 +1,117 @@
+/* =============================================
+   BÀI 7 — CSS: Trang khuyến mãi sản phẩm Double Rich
+   Khớp 100% hình mẫu đề bài
+   ============================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e6e8eb;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 40px 15px;
+}
+
+/* Khung bài viết trắng trung tâm */
+.khung-bai-viet {
+    max-width: 860px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+/* Banner chính (màu đỏ) */
+.dai-tieu-de-chinh {
+    background-color: #C8102E;
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+    padding: 14px 20px;
+}
+
+/* Banner phụ (màu hồng nhạt) */
+.dai-tieu-de-phu {
+    background-color: #FBE3E8;
+    color: #C8102E;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 8px 20px;
+    letter-spacing: 0.5px;
+}
+
+/* Phần nội dung chính bên trong */
+.than-bai {
+    padding: 30px;
+}
+
+/* Hàng trên: bên trái khoảng trống, bên phải có vạch xám đứng */
+.hang-tren {
+    display: flex;
+    gap: 20px;
+}
+
+/* Cột trống bên trái phía trên */
+.cot-trai-trong {
+    flex: 1;
+}
+
+/* Khối bên phải có vạch đứng phân cách */
+.cot-phai-co-vach {
+    flex: 1.15;
+    border-left: 1px solid #dcdcdc; /* Vạch đứng màu xám nhạt */
+    padding-left: 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.cum-van-ban {
+    flex: 1;
+}
+
+/* Ảnh sản phẩm nằm bên phải của khối */
+.anh-san-pham {
+    width: 170px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+/* Hàng dưới: chứa Cách thức nhận giải */
+.hang-duoi {
+    margin-top: 10px;
+}
+
+/* Cột trái phía dưới (chiếm 48% chiều rộng để không bị lan sang phải) */
+.cot-trai-duoi {
+    width: 48%;
+}
+
+/* Tiêu đề các mục: chữ đỏ kèm kí hiệu □ */
+.tieu-de-muc {
+    color: #C8102E;
+    font-weight: bold;
+    font-size: 14.5px;
+    margin-top: 12px;
+    margin-bottom: 8px;
+}
+
+/* Danh sách bullet */
+.danh-sach {
+    margin-top: 0;
+    margin-bottom: 16px;
+    padding-left: 18px;
+    list-style-type: disc;
+}
+
+.danh-sach li {
+    font-size: 13.5px;
+    color: #222222;
+    line-height: 1.6;
+    margin-bottom: 6px;
+}

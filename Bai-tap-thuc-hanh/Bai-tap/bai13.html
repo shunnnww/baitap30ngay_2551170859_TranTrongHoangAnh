@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 13 - Đồng hồ số</title>
+    <link rel="stylesheet" href="bai13.css">
+</head>
+<body>
+
+    <!-- KHUNG CHỨA TOÀN BỘ ĐỒNG HỒ VÀ LỜI CHÀO -->
+    <div class="khung-dong-ho">
+        <!-- VÙNG HIỂN THỊ ĐỒNG HỒ SỐ (NỀN ĐEN #000000) -->
+        <div class="hop-dong-ho">
+            <!-- Giờ (2 chữ số) -->
+            <img id="gio-chuc" src="00.gif" alt="0" class="chu-so">
+            <img id="gio-don-vi" src="00.gif" alt="0" class="chu-so">
+
+            <!-- Dấu hai chấm ngăn cách giờ và phút -->
+            <img src="haicham.gif" alt=":" class="dau-hai-cham">
+
+            <!-- Phút (2 chữ số) -->
+            <img id="phut-chuc" src="00.gif" alt="0" class="chu-so">
+            <img id="phut-don-vi" src="00.gif" alt="0" class="chu-so">
+
+            <!-- Dấu hai chấm ngăn cách phút và giây -->
+            <img src="haicham.gif" alt=":" class="dau-hai-cham">
+
+            <!-- Giây (2 chữ số) -->
+            <img id="giay-chuc" src="00.gif" alt="0" class="chu-so">
+            <img id="giay-don-vi" src="00.gif" alt="0" class="chu-so">
+        </div>
+
+        <!-- VÙNG HIỂN THỊ LỜI CHÀO THEO BUỔI -->
+        <div class="hop-loi-chao">
+            <span id="loi-chao" class="loi-chao">Chào buổi sáng</span>
+        </div>
+    </div>
+
+    <!-- Nhúng mã nguồn JavaScript xử lý đồng hồ -->
+    <script src="bai13.js"></script>
+</body>
+</html>

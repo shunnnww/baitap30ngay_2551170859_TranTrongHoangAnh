@@ -1,0 +1,60 @@
+{
+    box-sizing: border-box
+}
+body {
+    background-image: url('../Kho-anh/Bai12/Nen.gif');
+    background-repeat: repeat;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 40px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.khung-chinh{
+    max-width: 500px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    padding: 35px 30px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+.o-lich{
+    border: 1px solid #cccccc;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+}
+
+.nam-lich{
+    color:#c62828;
+    font-size:18px;
+    font-weight: bold;
+    font-family:'Times New Roman', Times, serif
+    margin-bottom: 4x;
+}
+.thang-lich{
+    color:#1565c0;
+    font-size:20px;
+    font-weight: bold;
+    font-family:'Times New Roman', Times, serif;
+    margin-bottom: 4px;
+}
+.ngay-lich{
+    color:#c62828;
+    font-size:64px;
+    font-weight: bold;
+    line-height: 1;
+    margin: 10px 0;
+}
+
+.thu-lich{
+    color:#1565c0;
+    font-size:20px;
+    font-weight: bold;
+    font-family:'Times New Roman', Times, serif;
+}

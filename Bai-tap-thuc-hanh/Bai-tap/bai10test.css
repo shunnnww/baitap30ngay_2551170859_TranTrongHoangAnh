@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #f0f2f5;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 40px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.the-form{
+    max-width: 680px;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.dau-form{
+    background-color: #0f766e;
+    color: #ffffff;
+    padding: 24px 30px;
+}
+
+.tieu-de-form{
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0 0 6px 0;
+}
+.mo-ta-form{
+    font-size: 14px;
+    margin: 0;
+}
+.than-form{
+    padding: 30px 30px;
+}
+.hang-hai-cot{
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    color: #334155
+    mard
+
+}

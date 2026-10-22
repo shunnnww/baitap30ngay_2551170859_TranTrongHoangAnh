@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 10 - Trang liên hệ (biểu mẫu HTML)</title>
+    <link rel="stylesheet" href="bai10.css">
+</head>
+<body>
+
+    <div class="the-form">
+        <!-- ĐẦU FORM NỀN TEAL -->
+        <header class="dau-form">
+            <h1 class="tieu-de-form">Liên hệ với chúng tôi</h1>
+            <p class="mo-ta-form">Vui lòng điền thông tin bên dưới, chúng tôi sẽ phản hồi trong 24 giờ.</p>
+        </header>
+
+        <!-- THÂN FORM -->
+        <form class="than-form" action="#" method="post">
+            <!-- HÀNG 1: HỌ TÊN + EMAIL (2 CỘT) -->
+            <div class="hang-hai-cot">
+                <div class="nhom-o-nhap">
+                    <label for="ho-ten">Họ và tên</label>
+                    <input type="text" id="ho-ten" name="ho_ten" value="Nguyễn Văn An" required>
+                </div>
+                <div class="nhom-o-nhap">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" value="an.nv@tlu.edu.vn" required>
+                </div>
+            </div>
+
+            <!-- HÀNG 2: SỐ ĐIỆN THOẠI + CHỦ ĐỀ (2 CỘT) -->
+            <div class="hang-hai-cot">
+                <div class="nhom-o-nhap">
+                    <label for="so-dien-thoai">Số điện thoại</label>
+                    <input type="tel" id="so-dien-thoai" name="so_dien_thoai" value="0987 654 321">
+                </div>
+                <div class="nhom-o-nhap">
+                    <label for="chu-de">Chủ đề</label>
+                    <select id="chu-de" name="chu_de">
+                        <option value="khoa-hoc" selected>Hỏi về khoá học</option>
+                        <option value="hoc-phi">Hỏi về học phí</option>
+                        <option value="lich-thi">Hỏi về lịch thi</option>
+                        <option value="khac">Khác</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- HÀNG 3: NỘI DUNG (TEXTAREA) -->
+            <div class="nhom-o-nhap">
+                <label for="noi-dung">Nội dung</label>
+                <textarea id="noi-dung" name="noi_dung" rows="4">Em muốn hỏi về lịch nộp bài tập môn Lập trình Web ạ.</textarea>
+            </div>
+
+            <!-- HÀNG 4: CHECKBOX ĐỒNG Ý -->
+            <div class="nhom-checkbox">
+                <input type="checkbox" id="dong-y" name="dong_y" checked required>
+                <label for="dong-y">Tôi đồng ý nhận email phản hồi.</label>
+            </div>
+
+            <!-- HÀNG 5: NÚT GỬI & NHẬP LẠI -->
+            <div class="nhom-nut-bam">
+                <button type="submit" class="nut-gui">Gửi liên hệ</button>
+                <button type="reset" class="nut-nhap-lai">Nhập lại</button>
+            </div>
+            
+        </form>
+    </div>
+
+</body>
+</html>

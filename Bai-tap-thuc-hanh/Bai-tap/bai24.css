@@ -1,0 +1,176 @@
+/* =============================================
+   BÀI 24 — CSS: Bảng giá 3 gói (Hình minh hoạ chuẩn)
+   ============================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f8fafc;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #1e293b;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 15px;
+}
+
+.khung-chinh {
+    max-width: 900px;
+    width: 100%;
+}
+
+/* TIÊU ĐỀ TRANG */
+.phan-tieu-de {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.tieu-de-chinh {
+    font-size: 24px;
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 6px;
+}
+
+.mo-ta-phu {
+    font-size: 13.5px;
+    color: #64748b;
+}
+
+/* LƯỚI 3 CỘT */
+.luoi-goi {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    align-items: center;
+}
+
+/* THẺ GÓI: NỀN #FFFFFF, VIỀN #e2e8f0, BO GÓC 14px, BÓNG NHẸ */
+.the-goi {
+    background-color: #ffffff;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 14px;
+    padding: 30px 22px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.the-goi:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* GÓI NỔI BẬT .HOT: VIỀN #4f46e5, NÂNG LÊN, BÓNG ĐẬM */
+.the-goi.hot {
+    border-color: #4f46e5;
+    border-width: 2px;
+    box-shadow: 0 12px 28px rgba(79, 70, 229, 0.15);
+    transform: scale(1.04);
+}
+
+.the-goi.hot:hover {
+    transform: scale(1.04) translateY(-4px);
+    box-shadow: 0 16px 32px rgba(79, 70, 229, 0.22);
+}
+
+/* NHÃN GÓI: NỀN #eef2ff, CHỮ #4338ca, BO TRÒN */
+.nhan-goi {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    color: #4338ca;
+    background-color: #eef2ff;
+    padding: 3px 12px;
+    border-radius: 20px;
+    margin-bottom: 12px;
+}
+
+.ten-goi {
+    font-size: 18px;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 14px;
+}
+
+/* GIÁ: CHỮ #1e293b, CỠ LỚN, IN ĐẬM */
+.hop-gia {
+    margin-bottom: 22px;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.so-gia {
+    font-size: 38px;
+    font-weight: 800;
+    color: #1e293b;
+    line-height: 1;
+}
+
+.don-vi {
+    font-size: 13.5px;
+    font-weight: 500;
+    color: #64748b;
+    margin-left: 4px;
+}
+
+/* DANH SÁCH QUYỀN LỢI */
+.danh-sach-quyen-loi {
+    list-style: none;
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+.danh-sach-quyen-loi li {
+    font-size: 13px;
+    color: #4b5563;
+    padding: 5px 0;
+}
+
+/* NÚT ĐĂNG KÝ */
+.btn-goi {
+    width: 100%;
+    background-color: #f1f5f9;
+    color: #334155;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-goi:hover {
+    background-color: #e2e8f0;
+}
+
+/* NÚT GÓI HOT: NỀN #4f46e5 (GÓI HOT), CHỮ #FFFFFF */
+.btn-hot {
+    background-color: #4f46e5;
+    color: #ffffff;
+}
+
+.btn-hot:hover {
+    background-color: #4338ca;
+}
+
+@media (max-width: 768px) {
+    .luoi-goi {
+        grid-template-columns: 1fr;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+    .the-goi.hot {
+        transform: none;
+    }
+}

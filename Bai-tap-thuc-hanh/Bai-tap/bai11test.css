@@ -1,0 +1,93 @@
+/* =============================================
+   BÀI 11 — CSS: Thư viện ảnh (figure / figcaption)
+   ============================================= */
+
+/* Thiết lập cơ bản */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #0f172a; /* Nền tối */
+    color: #e2e8f0;           /* Màu văn bản chính */
+    font-family: Arial, sans-serif;
+    padding: 40px 20px;
+    min-height: 100vh;
+}
+
+/* Khung thư viện căn giữa trang, chiều rộng tối đa ~960px */
+.khung-thu-vien {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/* Tiêu đề và phụ đề căn giữa */
+.dau-thu-vien {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.tieu-de-thu-vien {
+    color: #e2e8f0;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.mo-ta-thu-vien {
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+/* Bố cục lưới ảnh 3 cột, khoảng cách 18px */
+.luoi-anh {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+/* Thẻ figure bao bọc từng ảnh */
+.the-anh {
+    background-color: #1e293b;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.the-anh:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.45);
+}
+
+/* Hình ảnh nằm ngang có cùng chiều cao */
+.the-anh img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    display: block;
+    background-color: #1e293b;
+}
+
+/* Chú thích ảnh */
+.the-anh figcaption {
+    padding: 12px 14px;
+    font-size: 13px;
+    color: #cbd5e1;
+    font-weight: 500;
+}
+
+/* Tương thích trên các kích thước màn hình nhỏ hơn */
+@media (max-width: 768px) {
+    .luoi-anh {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .luoi-anh {
+        grid-template-columns: 1fr;
+    }
+}

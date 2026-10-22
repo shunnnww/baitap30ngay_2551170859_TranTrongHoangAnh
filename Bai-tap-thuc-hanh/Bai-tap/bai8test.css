@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+}
+
+.body{
+    background-color: #f0f2f5;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 30px 15px;
+    scroll-behavior: smooth;
+}
+.khung-trang-tin{
+    max-width: 860px;
+    margin: 0 auto;
+    background-color: #ffffff; 
+    box-shadow: 0 4px 18px rgba(0,0,0,0.12);
+    border-radius: 4px;
+    padding: 25px 30px;
+}
+.dau-trang{
+    border-bottom: 2px solid #1668c1;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.tieu-de-chinh{
+    color: #1668c1;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+.than-trang{
+    display: flex;
+    gap: 25px;
+}
+.cot-menu{
+    width: 170px;
+    flex-shrink: 0;
+    border-right: 1px solid #dcdcdc;
+    padding-right: 15px;
+}
+.tieu-de-menu{
+    color: #1668c1;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+.danh-sach-menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.danh-sach-menu li{
+    margin-bottom: 10px;
+}
+.danh-sach-menu a{
+    color: #1668c1;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+.danh-sach-menu a:hover{
+    text-decoration: underline;
+}
+.cot-noi-dung{
+    flex: 1;
+    padding-left: 5px;
+}
+.chuyen-muc{
+    margin-bottom: 25px;
+}
+.thanh-chuyen-muc{
+    background-color: #1668c1;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 8px 12px;
+    margin-bottom: 15px;
+}
+.bai-viet{
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #e0e0e0;
+    overflow: hidden;
+}
+.anh-bai-viet{
+    float: right;
+    width: 120px;
+    height: auto;
+    border-radius: 4px;
+    margin-left: 15px;
+    margin-bottom: 8px;
+}
+.tieu-de-bai{
+    color: #1668c1;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 0 0 6px 0;
+}
+.mo-ta-bai{
+    font-size: 13px;
+    color: #333333;
+    margin: 0;
+    height: 1.4;
+}
+.nut-ve-dau-trang{
+    text-align: right;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+.nut-ve-dau-trang a{
+    color: #1668c1;
+    text-decoration: none;
+    font-size: 13px;
+    font-style: italic;
+}
+.nut-ve-dau-trang a:hover{
+    text-decoration: underline;
+}

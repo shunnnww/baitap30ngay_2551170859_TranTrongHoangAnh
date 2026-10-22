@@ -1,0 +1,148 @@
+/* =============================================
+   BÀI 20 — CSS: Hiệu ứng ảnh với CSS Filter (Hình minh hoạ chuẩn)
+   ============================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #111827;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 15px;
+}
+
+.khung-chinh {
+    max-width: 760px;
+    width: 100%;
+    text-align: center;
+}
+
+/* KHUNG ẢNH NỀN #1c2226 BO GÓC 12px */
+.hop-anh {
+    background-color: #1c2226;
+    border-radius: 12px;
+    padding: 28px 20px;
+    margin-bottom: 25px;
+    display: inline-block;
+    width: 100%;
+    max-width: 460px;
+}
+
+.anh-hoa {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 16px auto;
+    transition: filter 0.25s, transform 0.25s, opacity 0.25s;
+}
+
+/* DÒNG CHỮ GRADIENT VÀNG GOLD IN NGHIÊNG */
+.chu-special {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 26px;
+    font-weight: bold;
+    color: #eab308;
+    background: linear-gradient(180deg, #fde047 0%, #eab308 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* CÁC HÀNG NÚT */
+.cac-hang-nut {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+}
+
+.hang-nut {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+}
+
+/* NÚT BẤM NỀN #232b30, NÚT CHỌN #0d6efd */
+.btn-filter {
+    background-color: #232b30;
+    color: #f3f4f6;
+    border: 1px solid #374151;
+    border-radius: 6px;
+    padding: 7px 15px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.btn-filter:hover {
+    background-color: #2d3748;
+}
+
+.btn-filter.active {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    color: #ffffff;
+}
+
+/* CÁC HIỆU ỨNG FILTER */
+.filter-gray {
+    filter: grayscale(1);
+}
+
+.filter-xray {
+    filter: grayscale(1) invert(1);
+}
+
+.filter-invert {
+    filter: invert(1);
+}
+
+.filter-fliph {
+    transform: scaleX(-1);
+}
+
+.filter-flipv {
+    transform: scaleY(-1);
+}
+
+.filter-glow {
+    filter: drop-shadow(0 0 10px #fbbf24);
+}
+
+.filter-shadow {
+    filter: drop-shadow(5px 5px 6px rgba(0, 0, 0, 0.6));
+}
+
+.filter-boldshadow {
+    filter: drop-shadow(8px 8px 0px rgba(0, 0, 0, 0.9));
+}
+
+.filter-dropshadow {
+    filter: drop-shadow(8px 10px 8px rgba(0, 0, 0, 0.7));
+}
+
+.filter-blur {
+    filter: blur(3px);
+}
+
+.filter-wave {
+    filter: url(#wave);
+}
+
+.filter-mask {
+    opacity: 0.4;
+    filter: contrast(1.8);
+}
+
+.filter-alpha {
+    opacity: 0.4;
+}

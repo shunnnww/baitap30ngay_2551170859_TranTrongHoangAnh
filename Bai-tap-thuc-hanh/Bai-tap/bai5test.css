@@ -1,0 +1,74 @@
+body{
+    background-color: white;
+    font-family: 'Times New Roman', Times, serif;
+    margin 0;
+    padding: 40px 20px;
+}
+.khung-trang{
+    max-width: 750px;
+    margin 0 auto;
+}
+.tieu-de-cong-ty{
+    color: #c2185b;
+    text-align:center;
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+.khung-hai-cot{
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+.cot-anh{
+    flex-shrink: 0;
+    width: 220px;
+    text-align: center;
+}
+.anh-hoa{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+}
+.cot-noi-dung{
+    flex: 1;
+}
+.nhan-muc{
+    background-color: #FFC0Cb;
+    color: black;
+    font-weight: bold;
+    display: inline-block;
+    padding: 4px 12px;
+    margin-bottom: 12px;
+    margin-top: 10px;
+    font-size: 16px;
+}
+.danh-sach-vuong{
+    list-style-type: square;
+    padding-left: 20px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.danh-sach-tron{
+    list-style-type: circle;
+    padding-left: 20px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.danh-sach-vuong li,
+.danh-sach-tron li{
+    font-size: 16px;
+    color: black;
+    line-height: 1.8;
+
+.dong-ban-quyen{
+    text-align: center;
+    margin-top: 16px;
+}}
+.dong-ban-quyen a{
+    color: blue;
+    text-decoration: underline;
+    font-size: 14px;
+}

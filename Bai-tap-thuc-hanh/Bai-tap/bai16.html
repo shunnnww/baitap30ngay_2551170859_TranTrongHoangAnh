@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 16 - Danh sách việc cần làm</title>
+    <link rel="stylesheet" href="bai16.css">
+</head>
+<body>
+
+    <div class="the-ung-dung">
+        <!-- TIÊU ĐỀ NỀN TÍM #6d28d9 -->
+        <header class="dau-the">
+            <h2 class="tieu-de-chinh">Danh sách việc cần làm</h2>
+            <p class="mo-ta-phu">Thêm việc mới, đánh dấu hoàn thành hoặc xoá — tất cả bằng JavaScript.</p>
+        </header>
+
+        <!-- Ô NHẬP + NÚT THÊM -->
+        <div class="khung-nhap-lieu">
+            <input type="text" id="o-nhap-viec" placeholder="Nhập việc cần làm..." value="Hoàn thành bài tập Lập trình Web">
+            <button type="button" id="btn-them" class="btn-them">Thêm</button>
+        </div>
+
+        <!-- DANH SÁCH CÁC VIỆC -->
+        <ul id="danh-sach" class="danh-sach">
+            <li class="muc-viec hoan-thanh">
+                <span class="o-danh-dau"></span>
+                <span class="noi-dung-viec">Đọc chương HTML5 cơ bản</span>
+                <button type="button" class="btn-xoa">Xoá</button>
+            </li>
+            <li class="muc-viec">
+                <span class="o-danh-dau"></span>
+                <span class="noi-dung-viec">Làm bài tập CSS Grid</span>
+                <button type="button" class="btn-xoa">Xoá</button>
+            </li>
+            <li class="muc-viec">
+                <span class="o-danh-dau"></span>
+                <span class="noi-dung-viec">Quay video OBS nộp bài</span>
+                <button type="button" class="btn-xoa">Xoá</button>
+            </li>
+        </ul>
+
+        <!-- THÔNG TIN SỐ VIỆC CÒN LẠI -->
+        <footer class="chan-the">
+            <span id="so-viec-con">Còn 2 việc chưa hoàn thành</span>
+        </footer>
+    </div>
+
+    <script src="bai16.js"></script>
+</body>
+</html>

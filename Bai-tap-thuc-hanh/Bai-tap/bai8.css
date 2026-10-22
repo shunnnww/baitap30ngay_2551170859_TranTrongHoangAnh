@@ -1,0 +1,147 @@
+/* =============================================
+   BÀI 8 — CSS: Trang tin nhiều chuyên mục
+   ============================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f2f5;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 30px 15px;
+    scroll-behavior: smooth;
+}
+
+.khung-trang-tin {
+    max-width: 860px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding: 25px 30px;
+}
+
+/* ĐẦU TRANG */
+.dau-trang {
+    border-bottom: 2px solid #1668C1;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.tieu-de-chinh {
+    color: #1668C1;
+    font-size: 24px;
+    margin: 0;
+    font-weight: bold;
+}
+
+/* THÂN TRANG: 2 CỘT */
+.than-trang {
+    display: flex;
+    gap: 25px;
+}
+
+/* CỘT TRÁI: MENU */
+.cot-menu {
+    width: 170px;
+    flex-shrink: 0;
+    border-right: 1px solid #eeeeee;
+    padding-right: 15px;
+}
+
+.tieu-de-menu {
+    font-size: 13px;
+    font-weight: bold;
+    color: #555555;
+    margin-bottom: 12px;
+}
+
+.danh-sach-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.danh-sach-menu li {
+    margin-bottom: 10px;
+}
+
+.danh-sach-menu a {
+    color: #1668C1;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.danh-sach-menu a:hover {
+    text-decoration: underline;
+}
+
+/* CỘT PHẢI: NỘI DUNG */
+.cot-noi-dung {
+    flex: 1;
+}
+
+.chuyen-muc {
+    margin-bottom: 25px;
+}
+
+.thanh-chuyen-muc {
+    background-color: #1668C1;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 7px 12px;
+    border-radius: 4px;
+    margin: 0 0 15px 0;
+}
+
+/* BÀI VIẾT */
+.bai-viet {
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+    border-bottom: 1px dotted #e0e0e0;
+    overflow: hidden;
+}
+
+.anh-bai-viet {
+    float: right;
+    width: 110px;
+    height: auto;
+    border-radius: 4px;
+    margin-left: 15px;
+    margin-bottom: 8px;
+}
+
+.tieu-de-bai {
+    color: #1668C1;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 0 6px 0;
+}
+
+.mo-ta-bai {
+    font-size: 13.5px;
+    color: #333333;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.nut-ve-dau-trang {
+    text-align: right;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.nut-ve-dau-trang a {
+    color: #1668C1;
+    font-size: 12px;
+    text-decoration: none;
+    font-style: italic;
+}
+
+.nut-ve-dau-trang a:hover {
+    text-decoration: underline;
+}
