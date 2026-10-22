@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>30 Days of JavaScript - Day 18: Promises, Async/Await & Fetch API</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background: #f4f7f6;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #2c3e50;
+      border-bottom: 2px solid #e67e22;
+      padding-bottom: 10px;
+    }
+    .badge {
+      display: inline-block;
+      background: #e67e22;
+      color: white;
+      padding: 4px 12px;
+      border-radius: 12px;
+      font-size: 13px;
+      margin-bottom: 15px;
+    }
+    .card {
+      background: #fef9e7;
+      border-left: 4px solid #e67e22;
+      padding: 15px 20px;
+      margin: 15px 0;
+      border-radius: 0 6px 6px 0;
+    }
+    .hint {
+      background: #e8f8f5;
+      border-left: 4px solid #1abc9c;
+      padding: 12px 20px;
+      margin: 20px 0;
+      font-weight: 500;
+    }
+    .status-box {
+      background: #282c34;
+      color: #abb2bf;
+      padding: 15px;
+      border-radius: 6px;
+      overflow-x: auto;
+      font-family: Consolas, monospace;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <span class="badge">Day 18</span>
+    <h1>Promises, Async/Await & Fetch API</h1>
+    
+    <div class="hint">
+      👉 <strong>Hướng dẫn:</strong> Nhấn phím <code>F12</code> (hoặc chuột phải chọn <em>Inspect / Kiểm tra</em>) và chuyển sang tab <strong>Console</strong> để xem toàn bộ kết quả phân tích dữ liệu API và bảng thống kê (<code>console.table</code>).
+    </div>
+
+    <div class="card">
+      <h3>📁 Nội dung các tệp JavaScript:</h3>
+      <ul>
+        <li><strong>level1.js</strong>: Gọi Fetch API RestCountries (<code>https://restcountries.com/v2/all</code>) sử dụng cả hai cách tiếp cận: Promise (<code>.then().catch()</code>) và hiện đại (<code>async/await</code>). Trích xuất <code>name</code>, <code>capital</code>, <code>languages</code>, <code>population</code>, <code>area</code>.</li>
+        <li><strong>level2.js</strong>: Gọi Fetch API TheCatAPI (<code>https://api.thecatapi.com/v1/breeds</code>), trích xuất mảng tên <code>catNames</code> và tính trọng lượng trung bình loài mèo theo đơn vị kg.</li>
+        <li><strong>level3.js</strong>:
+          <ol>
+            <li>Tính trung bình trọng lượng mèo theo đơn vị metric (kg).</li>
+            <li>Tìm 10 quốc gia có diện tích lớn nhất thế giới sắp xếp theo bảng.</li>
+            <li>Đếm tổng số ngôn ngữ chính thức độc nhất trên toàn thế giới bằng cấu trúc dữ liệu <code>Set</code>.</li>
+          </ol>
+        </li>
+      </ul>
+    </div>
+
+    <div class="card" style="border-left-color: #3498db; background: #ebf5fb;">
+      <h3>💡 Ghi chú kỹ thuật về API bên thứ ba (Third-party APIs):</h3>
+      <p>Các API công cộng bên ngoài (như RestCountries v2 & TheCatAPI) có thể bị thay đổi chính sách (đổi version, yêu cầu API key cá nhân hoặc chặn CORS). Toàn bộ mã nguồn đã được thiết kế chuẩn cấp doanh nghiệp với khối <code>try...catch</code> bắt lỗi và bộ <strong>Fallback Data</strong> dự phòng tự động kích hoạt, đảm bảo chương trình luôn chạy mượt mà 100% không bị ngắt quãng.</p>
+    </div>
+  </div>
+
+  <!-- Nạp các file bài tập -->
+  <script src="level1.js"></script>
+  <script src="level2.js"></script>
+  <script src="level3.js"></script>
+</body>
+</html>

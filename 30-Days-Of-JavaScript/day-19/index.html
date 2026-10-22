@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>30 Days of JavaScript - Day 19: Closures</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 30px;
+            background-color: #f8fafc;
+            color: #1e293b;
+        }
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 32px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        h1 {
+            color: #0f172a;
+            border-bottom: 3px solid #3b82f6;
+            padding-bottom: 12px;
+            font-size: 26px;
+        }
+        .guide-box {
+            background-color: #eff6ff;
+            border-left: 5px solid #3b82f6;
+            padding: 16px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .card {
+            background: #f1f5f9;
+            padding: 16px;
+            border-radius: 8px;
+            margin-bottom: 16px;
+        }
+        .card h3 {
+            margin-top: 0;
+            color: #2563eb;
+        }
+        code {
+            background-color: #e2e8f0;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: Consolas, monospace;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📔 30 Days of JavaScript - Ngày 19: Closures (Bao đóng)</h1>
+
+        <div class="guide-box">
+            <strong>💡 Hướng dẫn kiểm tra:</strong>
+            <p>Nhấn phím <strong>F12</strong> (hoặc bấm chuột phải chọn <em>Inspect / Kiểm tra</em>) rồi chuyển sang tab <strong>Console</strong> để xem toàn bộ kết quả thực thi của các bài tập.</p>
+        </div>
+
+        <div class="card">
+            <h3>Level 1: <code>level1.js</code></h3>
+            <p>Xây dựng hàm cha trả về closure hàm con có quyền truy xuất và thay đổi biến trạng thái trong phạm vi hàm cha.</p>
+        </div>
+
+        <div class="card">
+            <h3>Level 2: <code>level2.js</code></h3>
+            <p>Xây dựng hàm closure trả về một đối tượng chứa 3 hàm con (increment, decrement, reset) thao tác chung trên cùng một biến private scoped.</p>
+        </div>
+
+        <div class="card">
+            <h3>Level 3: <code>level3.js</code></h3>
+            <p>Xây dựng hàm quản trị tài chính cá nhân <code>personAccount</code> áp dụng nguyên lý Closure: đóng gói hoàn toàn <code>incomes</code> và <code>expenses</code>, cung cấp các phương thức thao tác an toàn.</p>
+        </div>
+    </div>
+
+    <!-- Nạp các file bài tập theo thứ tự -->
+    <script src="level1.js"></script>
+    <script src="level2.js"></script>
+    <script src="level3.js"></script>
+</body>
+</html>

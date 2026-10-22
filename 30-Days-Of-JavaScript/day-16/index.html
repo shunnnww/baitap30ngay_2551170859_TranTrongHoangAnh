@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>30 Days of JavaScript - Day 16: JSON</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background: #f4f7f6;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #2c3e50;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 10px;
+    }
+    .badge {
+      display: inline-block;
+      background: #3498db;
+      color: white;
+      padding: 4px 12px;
+      border-radius: 12px;
+      font-size: 13px;
+      margin-bottom: 15px;
+    }
+    .card {
+      background: #eef7fc;
+      border-left: 4px solid #3498db;
+      padding: 15px 20px;
+      margin: 15px 0;
+      border-radius: 0 6px 6px 0;
+    }
+    .hint {
+      background: #fff8e1;
+      border-left: 4px solid #f39c12;
+      padding: 12px 20px;
+      margin: 20px 0;
+      font-weight: 500;
+    }
+    pre {
+      background: #282c34;
+      color: #abb2bf;
+      padding: 15px;
+      border-radius: 6px;
+      overflow-x: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <span class="badge">Day 16</span>
+    <h1>JSON (JavaScript Object Notation)</h1>
+    
+    <div class="hint">
+      👉 <strong>Hướng dẫn:</strong> Nhấn phím <code>F12</code> (hoặc chuột phải chọn <em>Inspect / Kiểm tra</em>) và chuyển sang tab <strong>Console</strong> để xem toàn bộ kết quả thực thi của các tệp <code>level1.js</code>, <code>level2.js</code>, <code>level3.js</code>.
+    </div>
+
+    <div class="card">
+      <h3>📁 Nội dung các tệp JavaScript:</h3>
+      <ul>
+        <li><strong>level1.js</strong>: Chuyển đổi các kiểu dữ liệu mảng, số, boolean và đối tượng sang chuỗi JSON với <code>JSON.stringify()</code>.</li>
+        <li><strong>level2.js</strong>: Sử dụng tham số lọc <code>replacer</code> trong <code>JSON.stringify()</code> để trích xuất các trường mong muốn.</li>
+        <li><strong>level3.js</strong>: Phân tích chuỗi JSON phức tạp với <code>JSON.parse()</code> và tìm kiếm người dùng có nhiều kỹ năng nhất.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Nạp các file bài tập -->
+  <script src="level1.js"></script>
+  <script src="level2.js"></script>
+  <script src="level3.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>30 Days of JavaScript - Day 15: Classes & OOP</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            margin: 40px auto;
+            max-width: 800px;
+            padding: 0 20px;
+            color: #333;
+        }
+        h1 {
+            color: #2e7d32;
+            border-bottom: 2px solid #4caf50;
+            padding-bottom: 10px;
+        }
+        .info-card {
+            background-color: #f1f8e9;
+            border-left: 5px solid #4caf50;
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        code {
+            background-color: #e9ecef;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: Consolas, Monaco, 'Courier New', monospace;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>30 Days of JavaScript - Day 15: Classes & Lập Trình Hướng Đối Tượng (OOP)</h1>
+    
+    <div class="info-card">
+        <h3>Hướng dẫn kiểm tra bài làm:</h3>
+        <p>1. Bấm phím <strong>F12</strong> (hoặc nhấn chuột phải và chọn <strong>Inspect / Kiểm tra</strong>).</p>
+        <p>2. Chuyển sang tab <strong>Console</strong> để quan sát kết quả chi tiết từng cấp độ.</p>
+    </div>
+
+    <h3>Các file JavaScript được nạp:</h3>
+    <ul>
+        <li><code>level1.js</code>: Lớp <code>Animal</code> cơ bản, hai lớp con <code>Dog</code> và <code>Cat</code> kế thừa với từ khóa <code>extends</code> và <code>super()</code>.</li>
+        <li><code>level2.js</code>: Ghi đè phương thức (Method Overriding) ở lớp <code>Dog</code> và <code>Cat</code>, bổ sung thuộc tính <code>breed</code> và tiếng kêu đặc thù gâu gâu / meo meo.</li>
+        <li><code>level3.js</code>: Lớp <code>Statistics</code> tính toán đầy đủ các chỉ số thống kê (count, sum, min, max, range, mean, median, mode, variance, std, freqDist) và lớp <code>PersonAccount</code> quản lý tài chính cá nhân.</li>
+    </ul>
+
+    <!-- Nạp các file bài tập -->
+    <script src="level1.js"></script>
+    <script src="level2.js"></script>
+    <script src="level3.js"></script>
+</body>
+</html>

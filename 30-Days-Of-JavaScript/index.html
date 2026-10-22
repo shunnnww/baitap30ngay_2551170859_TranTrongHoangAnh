@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>30 Days of JavaScript - Master Hub</title>
+    <style>
+        :root {
+            --primary: #3b82f6;
+            --primary-hover: #2563eb;
+            --bg-dark: #0f172a;
+            --card-bg: #1e293b;
+            --card-border: #334155;
+            --text-light: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #f59e0b;
+            --badge-green: #10b981;
+        }
+        * { box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, var(--bg-dark) 0%, #1a2234 100%);
+            color: var(--text-light);
+            margin: 0;
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+        .header {
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto 40px auto;
+        }
+        h1 {
+            font-size: 2.6rem;
+            color: var(--accent);
+            margin-bottom: 10px;
+        }
+        p.subtitle {
+            color: var(--text-muted);
+            font-size: 1.15rem;
+            margin-bottom: 15px;
+        }
+        .author-tag {
+            display: inline-block;
+            background: rgba(59, 130, 246, 0.15);
+            border: 1px solid var(--primary);
+            color: #93c5fd;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+        .days-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+            gap: 20px;
+        }
+        .day-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 14px;
+            padding: 22px;
+            transition: all 0.25s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            text-decoration: none;
+            color: inherit;
+        }
+        .day-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.3);
+        }
+        .day-number {
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .status-badge {
+            font-size: 0.75rem;
+            background: rgba(16, 185, 129, 0.15);
+            color: var(--badge-green);
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-weight: 600;
+        }
+        .day-title {
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 12px;
+            line-height: 1.4;
+        }
+        .day-desc {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            line-height: 1.5;
+            margin-bottom: 15px;
+            flex-grow: 1;
+        }
+        .day-footer {
+            font-size: 0.85rem;
+            color: #60a5fa;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>BÀI TẬP THỰC HÀNH JAVASCRIPT</h1>
+        <p class="subtitle">30 Days of JavaScript — Tổng hợp bài tập thực hành (Day 01 - Day 20)</p>
+        <span class="author-tag">Sinh viên: Trần Trọng Hoàng Anh — MSSV: 2551170859</span>
+    </div>
+
+    <div class="days-grid">
+        <!-- Day 01 to Day 30 -->
+        <a href="day-01/index.html" class="day-card">
+            <div>
+                <div class="day-number">Day 01 <span class="status-badge">Hoàn thành</span></div>
+                <div class="day-title">Introduction & Variables</div>
+                <div class="day-desc">Giới thiệu JS, thẻ script, cú pháp comment và khai báo biến cơ bản.</div>
+            </div>
+            <div class="day-footer">Mở bài tập &rarr;</div>
+        </a>
+
+        <a href="day-02/index.html" class="day-card">
+            <div>
+                <div class="day-number">Day 02 <span class="status-badge">Hoàn thành</span></div>
+                <div class="day-title">Data Types</div>
+                <div class="day-desc">Kiểu dữ liệu nguyên thủy & tham chiếu, String methods, Math object, Random.</div>
+            </div>
+            <div class="day-footer">Mở bài tập &rarr;</div>
+        </a>
+
+        <a href="day-03/index.html" class="day-card">
+            <div>
+                <div class="day-number">Day 03 <span class="status-badge">Hoàn thành</span></div>
+                <div class="day-title">Booleans, Operators, Date</div>
+                <div class="day-desc">Toán tử so sánh, logic, đối tượng thời gian Date và định dạng thời gian.</div>
+            </div>
+            <div class="day-footer">Mở bài tập &rarr;</div>
+        </a>
+
+        <a href="day-04/index.html" class="day-card">
+            <div>
+                <div class="day-number">Day 04 <span class="status-badge">Hoàn thành</span></div>
+                <div class="day-title">Conditionals</div>
+                <div class="day-desc">Cấu trúc rẽ nhánh if...else, switch...case, toán tử ba ngôi (ternary).</div>
+            </div>
+            <div class="day-footer">Mở bài tập &rarr;</div>
+        </a>
+
+        <a href="day-05/index.html" class="day-card">
+            <div>
+                <div class="day-number">Day 05 <span class="status-badge">Hoàn thành</span></div>
+                <div class="day-title">Arrays</div>
+                <div class="day-desc">Mảng trong JS, các phương thức push, pop, slice, splice, concat, split.</div>
+            </div>
+            <div class="day-footer">Mở bài tập &rarr;</div>
+        </a>
+
+        <a href="day-06/index.html" class="day-card">
+            <div>
+                <div class="day-number">Day 06 <span class="status-badge">Hoàn thành</span></div>
+                <div class="day-title">Loops</div>
+                <div class="day-desc">Vòng lặp for, while, do while, in tam giác sao, số nguyên tố, sinh mã ID.</div>
+            </div>
+            <div class="day-footer">Mở bài tập &rarr;</div>
+        </a>
+
+        <a href="day-07/index.html" class="day-card">
+            <div>
+                <div class="day-number">Day 07 <span class="status-badge">Hoàn thành</span></div>
+                <div class="day-title">Functions</div>
+                <div class="day-desc">Hàm tự định nghĩa, arrow function, tham số mặc định, tính BMI, sinh màu.</div>
+            </div>
+            <div class="day-footer">Mở bài tập &rarr;</div>
+        </a>
+
+        <a href="day-08/index.html" class="day-card">
+            <div>
+                <div class="day-number">Day 08 <span class="status-badge">Hoàn thành</span></div>
+                <div class="day-title">Objects</div>
+                <div class="day-desc">Đối tượng lồng nhau, phương thức Object.keys, Object.values, personAccount.</div>
+            </div>
+            <div class="day-footer">Mở bài tập &rarr;</div>
+        </a>
+
+        <a href="day-09/index.html" class="day-card">
+            <div>
+                <div class="day-number">Day 09 <span class="status-badge">Hoàn thành</span></div>
+                <div class="day-title">Higher Order Functions</div>
+                <div class="day-desc">Làm chủ forEach, map, filter, reduce, find, sort và thống kê dữ liệu.</div>
+            </div>
+            <div class="day-footer">Mở bài tập &rarr;</div>
+        </a>
+
+        <a href="day-10/index.html" class="day-card">
+            <div>
+                <div class="day-number">Day 10 <span class="status-badge">Hoàn thành</span></div>
+                <div class="day-title">Sets and Maps</div>
+                <div class="day-desc">Cấu trúc dữ liệu Set & Map, phép hợp, giao, hiệu và đếm ngôn ngữ.</div>
+            </div>
+            <div class="day-footer">Mở bài tập &rarr;</div>
+        </a>
+
+        <a href="day-11/index.html" class="day-card">
+            <div>
+                <div class="day-number">Day 11 <span class="status-badge">Hoàn thành</span></div>
+                <div class="day-title">Destructuring & Spreading</div>
+                <div class="day-desc">Phân rã mảng, đối tượng, rest parameter và spread operator hiện đại.</div>
+            </div>
+            <div class="day-footer">Mở bài tập &rarr;</div>
+        </a>
+
+        <a href="day-12/index.html" class="day-card">
+            <div>
+                <div class="day-number">Day 12 <span class="status-badge">Hoàn thành</span></div>
+                <div class="day-title">Regular Expressions</div>
+                <div class="day-desc">Biểu thức chính quy Regex, bóc tách chuỗi, làm sạch văn bản cleanText.</div>
+            </div>
+            <div class="day-footer">Mở bài tập &rarr;</div>
+        </a>
+
+        <a href="day-13/index.html" class="day-card">
+            <div>
+                <div class="day-number">Day 13 <span class="status-badge">Hoàn thành</span></div>
+                <div class="day-title">Console Object Methods</div>
+                <div class="day-desc">console.table, console.group, console.time đo lường hiệu năng vòng lặp.</div>
+            </div>
+            <div class="day-footer">Mở bài tập &rarr;</div>
+        </a>
+
+        <a href="day-14/index.html" class="day-card">
+            <div>
+                <div class="day-number">Day 14 <span class="status-badge">Hoàn thành</span></div>
+                <div class="day-title">Error Handling</div>
+                <div class="day-desc">Xử lý ngoại lệ try...catch...finally, throw error, phân loại chuẩn lỗi.</div>
+            </div>
+            <div class="day-footer">Mở bài tập &rarr;</div>
+        </a>
+
+        <a href="day-15/index.html" class="day-card">
+            <div>
+                <div class="day-number">Day 15 <span class="status-badge">Hoàn thành</span></div>
+                <div class="day-title">Classes & OOP</div>
+                <div class="day-desc">Lập trình hướng đối tượng ES6+, kế thừa extends, super, class Statistics.</div>
+            </div>
+            <div class="day-footer">Mở bài tập &rarr;</div>
+        </a>
+
+        <a href="day-16/index.html" class="day-card">
+            <div>
+                <div class="day-number">Day 16 <span class="status-badge">Hoàn thành</span></div>
+                <div class="day-title">JSON</div>
+                <div class="day-desc">Định dạng JSON, JSON.stringify với replacer và JSON.parse trích xuất dữ liệu.</div>
+            </div>
+            <div class="day-footer">Mở bài tập &rarr;</div>
+        </a>
+
+        <a href="day-17/index.html" class="day-card">
+            <div>
+                <div class="day-number">Day 17 <span class="status-badge">Hoàn thành</span></div>
+                <div class="day-title">Web Storages</div>
+                <div class="day-desc">Lưu trữ dữ liệu cục bộ an toàn với localStorage và sessionStorage.</div>
+            </div>
+            <div class="day-footer">Mở bài tập &rarr;</div>
+        </a>
+
+        <a href="day-18/index.html" class="day-card">
+            <div>
+                <div class="day-number">Day 18 <span class="status-badge">Hoàn thành</span></div>
+                <div class="day-title">Promises & Async/Await</div>
+                <div class="day-desc">Xử lý bất đồng bộ, Fetch API gọi dữ liệu quốc gia và API loài mèo.</div>
+            </div>
+            <div class="day-footer">Mở bài tập &rarr;</div>
+        </a>
+
+        <a href="day-19/index.html" class="day-card">
+            <div>
+                <div class="day-number">Day 19 <span class="status-badge">Hoàn thành</span></div>
+                <div class="day-title">Closures</div>
+                <div class="day-desc">Nguyên lý Closure, đóng gói dữ liệu và biến riêng tư private variables.</div>
+            </div>
+            <div class="day-footer">Mở bài tập &rarr;</div>
+        </a>
+
+        <a href="day-20/index.html" class="day-card">
+            <div>
+                <div class="day-number">Day 20 <span class="status-badge">Hoàn thành</span></div>
+                <div class="day-title">Clean Code Guidelines</div>
+                <div class="day-desc">Quy chuẩn viết mã sạch theo tiêu chuẩn Airbnb & Google Style Guide.</div>
+            </div>
+            <div class="day-footer">Mở bài tập &rarr;</div>
+        </a>
+    </div>
+</body>
+</html>

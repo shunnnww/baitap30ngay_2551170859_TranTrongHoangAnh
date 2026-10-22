@@ -1,0 +1,23 @@
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Archive files
+*.rar
+*.zip
+
+# Temporary or other projects
+hnue-clone/
+
+# Bai tap cac ngay tiep theo (luu tren may, chua nop)
+30-Days-Of-JavaScript/day-21/
+30-Days-Of-JavaScript/day-22/
+30-Days-Of-JavaScript/day-23/
+30-Days-Of-JavaScript/day-24/
+30-Days-Of-JavaScript/day-25/
+30-Days-Of-JavaScript/day-26/
+30-Days-Of-JavaScript/day-27/
+30-Days-Of-JavaScript/day-28/
+30-Days-Of-JavaScript/day-29/
+30-Days-Of-JavaScript/day-30/

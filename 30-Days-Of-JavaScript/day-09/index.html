@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>30 Days of JavaScript - Day 09: Higher Order Functions</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            max-width: 800px;
+            background: #fff;
+            padding: 30px 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #2980b9;
+            margin-top: 25px;
+        }
+        .badge {
+            background-color: #e8f4fd;
+            color: #2980b9;
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .instruction {
+            background: #fff8e1;
+            border-left: 5px solid #ffb300;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        ul {
+            line-height: 1.8;
+        }
+        code {
+            background-color: #edf2f7;
+            padding: 2px 6px;
+            border-radius: 4px;
+            color: #d63031;
+            font-family: Consolas, monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📔 30 Days of JavaScript - Day 09</h1>
+        <p><strong>Chủ đề:</strong> Các hàm bậc cao (Higher Order Functions: <code>forEach</code>, <code>map</code>, <code>filter</code>, <code>reduce</code>, <code>some</code>, <code>every</code>, <code>find</code>, <code>findIndex</code>, <code>sort</code>).</p>
+
+        <div class="instruction">
+            <strong>💡 Hướng dẫn kiểm tra kết quả:</strong>
+            <p>Nhấn phím <strong>F12</strong> (hoặc bấm chuột phải chọn <strong>Kiểm tra / Inspect</strong>), sau đó chuyển sang tab <strong>Console</strong> để xem toàn bộ kết quả thực thi của từng bài tập!</p>
+        </div>
+
+        <h2>📂 Danh sách các file bài tập:</h2>
+        <ul>
+            <li><code>countries_data.js</code> <span class="badge">Dữ liệu</span>: Chứa thông tin chi tiết các quốc gia trên thế giới.</li>
+            <li><code>level1.js</code> <span class="badge">Level 1 - 26 câu</span>: Các hàm lặp mảng cơ bản (<code>forEach</code>, <code>map</code>, <code>filter</code>, <code>reduce</code>, <code>some</code>, <code>every</code>, <code>find</code>, <code>findIndex</code>).</li>
+            <li><code>level2.js</code> <span class="badge">Level 2 - 7 câu</span>: Kỹ thuật chaining, thống kê chữ cái đầu tiên của quốc gia, lọc dữ liệu mẫu nâng cao.</li>
+            <li><code>level3.js</code> <span class="badge">Level 3 - 4 câu</span>: Sắp xếp dữ liệu quốc gia, tìm top ngôn ngữ, top dân số và đối tượng thống kê toán học <code>statistics</code>.</li>
+        </ul>
+    </div>
+
+    <!-- Nạp dữ liệu và các script bài giải -->
+    <script src="countries_data.js"></script>
+    <script src="level1.js"></script>
+    <script src="level2.js"></script>
+    <script src="level3.js"></script>
+</body>
+</html>
